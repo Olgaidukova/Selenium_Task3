@@ -37,11 +37,11 @@ public class SendAppSteps extends BaseSteps {
         new SendAppPage(driver).sex(value);
     }
 
-    @Step("Нажимаем на оформление")
+    @Step("Нажать на оформление")
     public void clickIssue(){
         new SendAppPage(driver).continueClick();
     }
-    @Step("Проверяем сообщение об ошибке")
+    @Step("Проверка сообщения об ошибке")
     public void checkErrorMessage(String value){new SendAppPage(driver).checkError(value);}
 
 }
